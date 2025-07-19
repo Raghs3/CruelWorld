@@ -198,10 +198,21 @@ for 2 print Tuesday and so on for 7 print Sunday.
 //     return 0;
 // }
 
+// int main() {
+//     string s = "Raghs3";
+//     int len = s.size();
+//     s[len - 1] = 'K';  // can't do "" as it is character 
+//     cout << s[len - 1];
+//     return 0;
+// }
+
 int main() {
-    string s = "Raghs3";
-    int len = s.size();
-    s[len - 1] = 'K';  // can't do "" as it is character 
-    cout << s[len - 1];
+
+    int i;
+    for(i = 1; i <= 25; i = i + 5) {  // scope of i is in for loop, unless declared outside
+        cout << "Raghs3 " << i << endl;
+    }
+    cout << i << endl;
+
     return 0;
 }
