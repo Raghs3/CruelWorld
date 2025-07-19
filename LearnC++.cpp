@@ -256,17 +256,109 @@ for 2 print Tuesday and so on for 7 print Sunday.
 // }
 
 // Take two numbers and print its sum
-int sum(int num1, int num2) {
-    int num3 = num1 + num2;
-    return num3;
+// int sum(int num1, int num2) {
+//     int num3 = num1 + num2;
+//     return num3;
+// }
+// 
+// int main() {
+//     int num1, num2;
+//     cin >> num1 >> num2;
+//     // int num3 = num1 + num2;
+//     // cout << num3;
+//     int res = sum(num1, num2);
+//     cout << res;
+//     return 0;
+// }
+
+// int maxx(int num1, int num2) {
+//     if(num1 >= num2) return num1;
+//     else return num2;  // must put return otherwise error
+// }
+// 
+// 
+// int main() {
+//     int num1, num2;
+//     cin >> num1 >> num2;
+//     int minimum = maxx(num1, num2);  // max already exists inbuilt so cant use max for our fn hence used maxx
+//     cout << minimum;
+//     return  0;
+// }
+
+
+// pass by value
+// void doSomething(string s) {  // (int num) {
+//     // cout << num << endl;
+//     // num += 5;
+//     // cout << num << endl;
+//     // num += 5;
+//     // cout << num << endl;
+//     s[0] = 't';
+//     cout << s << endl;
+// }
+
+
+// pass by reference
+// void doSomething(int &num) {  // (string &s) {  // ampersand makes fn take address, original value
+//     // s[0] = 't';
+//     // cout << s << endl;
+//     cout << num << endl;
+//     num += 5;
+//     cout << num << endl;
+//     num += 5;
+//     cout << num << endl;
+// }
+
+// int main() {
+// 
+//     // int num = 10;
+//     // doSomething(num);  // a copy goes, original no doesn't go
+//     // cout << num << endl;
+// 
+//     // string s = "raj";
+//     // doSomething(s);
+//     // cout << s << endl;
+// 
+//     int num = 10;
+//     doSomething(num);
+//     cout << num << endl;
+//     return 0;
+// }
+
+
+// int main() {
+//     int arr[5];
+//     for(int i = 0; i <= 4; i = i + 1) {
+//         cout << i << endl;
+//         cin >> arr[i];
+//     }
+//     // cin >> arr[0] >> arr[1] >> arr[2] >> arr[3] >> arr[4];
+// 
+//     // cout << arr[0] << endl << arr[1] << endl << arr[2];
+// 
+//     for(int i = 0; i <= 4; i = i + 1) {
+//         cout << arr[i] << " ";
+//     }
+// 
+//     return 0;
+// }
+
+void doSomething(int arr[], int n) {
+    arr[0] += 100;
+    cout << "Value inside function: " << arr[0] << endl;
 }
 
+
 int main() {
-    int num1, num2;
-    cin >> num1 >> num2;
-    // int num3 = num1 + num2;
-    // cout << num3;
-    int res = sum(num1, num2);
-    cout << res;
+    int n = 5;
+    int arr[n];
+    for(int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+
+    doSomething(arr, n);  // arr by default goes by reference always
+
+    cout << "Value inside int main: " << arr[0] << endl;
+
     return 0;
 }
