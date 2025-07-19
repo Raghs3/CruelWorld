@@ -206,27 +206,67 @@ for 2 print Tuesday and so on for 7 print Sunday.
 //     return 0;
 // }
 
+// int main() {
+// 
+//     // int i;
+//     // for(i = 1; i <= 25; i = i + 5) {  // scope of i is in for loop, unless declared outside
+//     //     cout << "Raghs3 " << i << endl;
+//     // }
+//     // cout << i << endl;
+// 
+// 
+//     int i = 2;
+//     // while(i <= 1) {
+//     //     cout << "Raghs3 " << i << endl;
+//     //     i = i + 1;
+//     // }
+// 
+//     do {
+//         cout << "Raghs3 " << i << endl;
+//         i = i + 1;
+//     } while(i <= 1);
+//     cout << i << endl;
+// 
+// 
+//     return 0;
+// }
+
+
+// Functions are set of code which performs something for you
+// Functions are used to modularise code
+// Functions are used to increase readability
+// FUnctions are used to use same code multiple times
+// void -> doesn't return anything
+// return -> 
+// parameterised
+// non parameterised
+
+// void printName(string name) {
+//     cout << name << endl;
+// }
+// int main () {
+//     string name;
+//     cin >> name;
+//     printName(name);
+// 
+//     string name2;
+//     cin >> name2;
+//     printName(name2);
+//     return 0;
+// }
+
+// Take two numbers and print its sum
+int sum(int num1, int num2) {
+    int num3 = num1 + num2;
+    return num3;
+}
+
 int main() {
-
-    // int i;
-    // for(i = 1; i <= 25; i = i + 5) {  // scope of i is in for loop, unless declared outside
-    //     cout << "Raghs3 " << i << endl;
-    // }
-    // cout << i << endl;
-
-
-    int i = 2;
-    // while(i <= 1) {
-    //     cout << "Raghs3 " << i << endl;
-    //     i = i + 1;
-    // }
-
-    do {
-        cout << "Raghs3 " << i << endl;
-        i = i + 1;
-    } while(i <= 1);
-    cout << i << endl;
-
-
+    int num1, num2;
+    cin >> num1 >> num2;
+    // int num3 = num1 + num2;
+    // cout << num3;
+    int res = sum(num1, num2);
+    cout << res;
     return 0;
 }
