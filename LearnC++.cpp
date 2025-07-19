@@ -117,24 +117,62 @@ Take the age from the user and then decide accordingly
 4. If age > 57
     print -> "retirement time"
 */
+// int main() {
+//     int age;
+//     cin >> age;
+//     if(age < 18) {
+//         cout << "not eligible for job";
+//     }
+//     // >= 18
+//     else if(age <= 57) {
+//         cout << "eligible for job";
+//         if(age > 55) {
+//             cout << ", but retirement soon";
+//         }
+//     }
+//     // else if(age <= 57) {
+//     //     cout << "eligible for job, but retirement soon";
+//     // }
+//     else {
+//         cout << "retirement time";
+//     }
+//     return 0;
+// }
+
+/*
+Take the day no and print the corresponding day
+for 1 print Monday,
+for 2 print Tuesday and so on for 7 print Sunday.
+*/
 int main() {
-    int age;
-    cin >> age;
-    if(age < 18) {
-        cout << "not eligible for job";
+    int day;
+    cin >> day;
+    
+    switch(day) {
+        case 1:
+            cout << "Monday";
+            break;
+        case 2:
+            cout << "Tuesday";
+            break;  // if don't use break, executes all the other cases afterwards too
+        case 3:
+            cout << "Wednesday";
+            break;
+        case 4:
+            cout << "Thursday";
+            break;
+        case 5:
+            cout << "Friday";
+            break;
+        case 6:
+            cout << "Saturday";
+            break;
+        case 7:
+            cout << "Sunday";
+            break;  // takes you out of conditional braces
+        default:
+        cout << "Invalid";  // last so don't need break
     }
-    // >= 18
-    else if(age <= 57) {
-        cout << "eligible for job";
-        if(age > 55) {
-            cout << ", but retirement soon";
-        }
-    }
-    // else if(age <= 57) {
-    //     cout << "eligible for job, but retirement soon";
-    // }
-    else {
-        cout << "retirement time";
-    }
+    cout << "Check";
     return 0;
 }
