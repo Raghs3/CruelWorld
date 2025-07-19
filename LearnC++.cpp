@@ -144,35 +144,64 @@ Take the day no and print the corresponding day
 for 1 print Monday,
 for 2 print Tuesday and so on for 7 print Sunday.
 */
+// int main() {
+//     int day;
+//     cin >> day;
+//     
+//     switch(day) {
+//         case 1:
+//             cout << "Monday";
+//             break;
+//         case 2:
+//             cout << "Tuesday";
+//             break;  // if don't use break, executes all the other cases afterwards too
+//         case 3:
+//             cout << "Wednesday";
+//             break;
+//         case 4:
+//             cout << "Thursday";
+//             break;
+//         case 5:
+//             cout << "Friday";
+//             break;
+//         case 6:
+//             cout << "Saturday";
+//             break;
+//         case 7:
+//             cout << "Sunday";
+//             break;  // takes you out of conditional braces
+//         default:
+//         cout << "Invalid";  // last so don't need break
+//     }
+//     cout << "Check";
+//     return 0;
+// }
+
+// int main() {
+//     // int a, b, c, d;
+//     // cin >> a >> b >> c >> d;  // not feasible for multiple values
+//     int arr[5];  // can modify and perform ops
+//     cin >> arr[0] >> arr[1] >> arr[2] >> arr[3] >> arr[4];
+//     // arr is container
+//     // arr[3] += 10;
+//     arr[3] = 16;
+//     cout << arr[3];
+//     return 0;
+// }
+
+// int main() {
+//     // 2D array
+//     int arr[3][5];
+// 
+//     arr[1][3] = 78;
+//     cout << arr[1][2];  // gives garbage value if not specified
+//     return 0;
+// }
+
 int main() {
-    int day;
-    cin >> day;
-    
-    switch(day) {
-        case 1:
-            cout << "Monday";
-            break;
-        case 2:
-            cout << "Tuesday";
-            break;  // if don't use break, executes all the other cases afterwards too
-        case 3:
-            cout << "Wednesday";
-            break;
-        case 4:
-            cout << "Thursday";
-            break;
-        case 5:
-            cout << "Friday";
-            break;
-        case 6:
-            cout << "Saturday";
-            break;
-        case 7:
-            cout << "Sunday";
-            break;  // takes you out of conditional braces
-        default:
-        cout << "Invalid";  // last so don't need break
-    }
-    cout << "Check";
+    string s = "Raghs3";
+    int len = s.size();
+    s[len - 1] = 'K';  // can't do "" as it is character 
+    cout << s[len - 1];
     return 0;
 }
