@@ -208,11 +208,25 @@ for 2 print Tuesday and so on for 7 print Sunday.
 
 int main() {
 
-    int i;
-    for(i = 1; i <= 25; i = i + 5) {  // scope of i is in for loop, unless declared outside
+    // int i;
+    // for(i = 1; i <= 25; i = i + 5) {  // scope of i is in for loop, unless declared outside
+    //     cout << "Raghs3 " << i << endl;
+    // }
+    // cout << i << endl;
+
+
+    int i = 2;
+    // while(i <= 1) {
+    //     cout << "Raghs3 " << i << endl;
+    //     i = i + 1;
+    // }
+
+    do {
         cout << "Raghs3 " << i << endl;
-    }
+        i = i + 1;
+    } while(i <= 1);
     cout << i << endl;
+
 
     return 0;
 }
