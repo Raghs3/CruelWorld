@@ -19,4 +19,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
+# Ignore test files
 test.cpp
+test.py
